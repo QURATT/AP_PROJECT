@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Spectstors">
+   <children>
+      <AnchorPane layoutY="-22.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1220.0" style="-fx-background-color: grey;">
+         <children>
+            <ImageView fitHeight="698.0" fitWidth="1220.0" opacity="0.2">
+               <image>
+                  <Image url="@../../Sports-Logo-Designs-1280x720.jpg" />
+               </image>
+            </ImageView>
+            <TextField fx:id="full_name" layoutX="274.0" layoutY="195.0" onAction="#nameHandler" prefHeight="35.0" prefWidth="303.0" promptText="Name" style="-fx-background-color: white;">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <Text fx:id="text" layoutX="333.0" layoutY="552.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="149.0">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Text>
+            <Text fill="#0d0d0d" layoutX="363.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter full name:">
+               <font>
+                  <Font name="High Tower Text" size="19.0" />
+               </font>
+            </Text>
+            <Text fill="#0d0d0d" layoutX="696.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter EmailID:">
+               <font>
+                  <Font name="High Tower Text" size="19.0" />
+               </font>
+            </Text>
+            <TextField fx:id="email_id" layoutX="593.0" layoutY="195.0" onAction="#emailHandler" prefHeight="35.0" prefWidth="303.0" promptText="Email" style="-fx-background-color: white;">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <Text fill="#0d0d0d" layoutX="340.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Phone Number:">
+               <font>
+                  <Font name="High Tower Text" size="19.0" />
+               </font>
+            </Text>
+            <TextField fx:id="phoneNumber" layoutX="273.0" layoutY="324.0" onAction="#phoneNumberHandler" prefHeight="35.0" prefWidth="303.0" promptText="PhoneNumber" style="-fx-background-color: white;">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <TextField fx:id="addresss" layoutX="599.0" layoutY="324.0" onAction="#addressHandler" prefHeight="35.0" prefWidth="303.0" promptText="Address" style="-fx-background-color: white;">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <Text fill="#0d0d0d" layoutX="694.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Address:">
+               <font>
+                  <Font name="High Tower Text" size="19.0" />
+               </font>
+            </Text>
+            <Text fill="#0d0d0d" layoutX="288.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fill out following information to continue booking your seat!" wrappingWidth="639.626953125">
+               <font>
+                  <Font name="High Tower Text" size="24.0" />
+               </font>
+            </Text>
+            <Text fill="#0d0d0d" layoutX="464.0" layoutY="426.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Credit Card Number:" wrappingWidth="259.0">
+               <font>
+                  <Font name="High Tower Text" size="19.0" />
+               </font>
+            </Text>
+            <TextField layoutX="426.0" layoutY="456.0" prefHeight="35.0" prefWidth="303.0" promptText="Credit Card Number" style="-fx-background-color: white;">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <Button fx:id="submit" layoutX="502.0" layoutY="533.0" mnemonicParsing="false" onAction="#submitHandler" prefHeight="49.0" prefWidth="149.0" text="Submit">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label fx:id="warning" layoutX="717.0" layoutY="541.0" prefHeight="36.0" prefWidth="203.0" style="-fx-background-color: LIGHTSTEELBLUE;" textFill="#1ec759">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ScheduleHandler">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="674.0" prefWidth="1237.0" style="-fx-background-color: grey;">
+         <children>
+            <ImageView fitHeight="674.0" fitWidth="1237.0" opacity="0.2">
+               <image>
+                  <Image url="@../../Sports-Logo-Designs-1280x720.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="#0d0d0d" layoutX="409.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select a game:">
+               <font>
+                  <Font name="High Tower Text" size="21.0" />
+               </font>
+            </Text>
+            <Text fill="#0d0d0d" layoutX="505.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Schedule" wrappingWidth="172.13818359375">
+               <font>
+                  <Font name="High Tower Text" size="34.0" />
+               </font>
+            </Text>
+            <Text fill="#0d0d0d" layoutX="312.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Team 1" wrappingWidth="136.8984375">
+               <font>
+                  <Font name="High Tower Text" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#0d0d0d" layoutX="489.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Team 2" wrappingWidth="172.13818359375">
+               <font>
+                  <Font name="High Tower Text" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#0d0d0d" layoutX="650.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" wrappingWidth="53.13818359375">
+               <font>
+                  <Font name="High Tower Text" size="20.0" />
+               </font>
+            </Text>
+            <MenuButton layoutX="586.0" layoutY="114.0" mnemonicParsing="false" onAction="#operations" prefHeight="36.0" prefWidth="132.0" text="Games">
+               <items>
+                  <MenuItem fx:id="game" mnemonicParsing="false" onAction="#operations" text="Cricket" />
+                  <MenuItem fx:id="game" mnemonicParsing="false" onAction="#operations" text="Football" />
+                  <MenuItem fx:id="game" mnemonicParsing="false" onAction="#operations" text="Hockey" />
+                  <MenuItem fx:id="game" mnemonicParsing="false" onAction="#operations" text="Badminton" />
+                  <MenuItem fx:id="game" mnemonicParsing="false" onAction="#operations" text="Volley Ball" />
+               </items>
+            </MenuButton>
+            <Label fx:id="texts" layoutX="291.0" layoutY="351.0" prefHeight="274.0" prefWidth="590.0" style="-fx-background-color: LIGHTSTEELBLUE;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="warning" layoutX="449.0" layoutY="589.0" prefHeight="36.0" prefWidth="203.0" style="-fx-background-color: LIGHTSTEELBLUE;" textFill="#c91d1d">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Text fill="#0d0d0d" layoutX="809.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game" wrappingWidth="53.13818359375">
+               <font>
+                  <Font name="High Tower Text" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="422.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teams Schedules" wrappingWidth="306.63671875">
+               <font>
+                  <Font name="Forte" size="41.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

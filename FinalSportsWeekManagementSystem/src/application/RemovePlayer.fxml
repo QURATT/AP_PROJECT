@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.modifyTeam">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="738.0" prefWidth="1208.0" style="-fx-background-color: grey;">
+         <children>
+            <ImageView fitHeight="738.0" fitWidth="1208.0" opacity="0.2">
+               <image>
+                  <Image url="@../../Sports-Logo-Designs-1280x720.jpg" />
+               </image>
+            </ImageView>
+            <Text layoutX="418.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remove Player" wrappingWidth="371.13671875">
+               <font>
+                  <Font name="Forte" size="47.0" />
+               </font>
+            </Text>
+            <TextField fx:id="name1" layoutX="180.0" layoutY="188.0" prefHeight="43.0" prefWidth="242.0" promptText="name">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <Text layoutX="180.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter name of player:" wrappingWidth="241.583984375">
+               <font>
+                  <Font name="High Tower Text" size="23.0" />
+               </font>
+            </Text>
+            <TextField fx:id="email1" layoutX="180.0" layoutY="315.0" prefHeight="43.0" prefWidth="242.0" promptText="ID">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <Text layoutX="180.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter ID of player" wrappingWidth="242.0">
+               <font>
+                  <Font name="High Tower Text" size="23.0" />
+               </font>
+            </Text>
+            <Button layoutX="422.0" layoutY="477.0" mnemonicParsing="false" onAction="#removePlayer" prefHeight="60.0" prefWidth="232.0" text="Submit">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <TextField fx:id="team_id1" layoutX="675.0" layoutY="188.0" prefHeight="43.0" prefWidth="242.0" promptText="ID">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <Text layoutX="681.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter ID of team" wrappingWidth="241.583984375">
+               <font>
+                  <Font name="High Tower Text" size="22.0" />
+               </font>
+            </Text>
+            <MenuButton layoutX="675.0" layoutY="316.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="199.0" style="-fx-background-color: white;" text="Select Game">
+               <items>
+                  <MenuItem fx:id="game1" mnemonicParsing="false" text="Cricket" />
+                  <MenuItem fx:id="game1" mnemonicParsing="false" text="Football" />
+                  <MenuItem fx:id="game1" mnemonicParsing="false" text="Hockey" />
+                  <MenuItem fx:id="game1" mnemonicParsing="false" text="Hand Ball" />
+                  <MenuItem fx:id="game1" mnemonicParsing="false" text="Kabaddi" />
+               </items>
+               <font>
+                  <Font name="System Italic" size="19.0" />
+               </font>
+            </MenuButton>
+            <Text layoutX="675.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Game" wrappingWidth="242.0">
+               <font>
+                  <Font name="High Tower Text" size="23.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
